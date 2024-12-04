@@ -24,7 +24,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
 db = SQLAlchemy(app)
 login_manager = LoginManager()
 login_manager.init_app(app)
-API_KEY = "AIzaSyCG2ShKXr-HU6ht7Z4ZiUUbrraRfk_IRZA"
+API_KEY = "YOUR_API_KEY"
 genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel(model_name="gemini-1.5-pro-002")
 
